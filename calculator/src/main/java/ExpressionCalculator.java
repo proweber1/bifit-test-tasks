@@ -68,24 +68,28 @@ class ExpressionCalculator {
 
     enum CalculatorOperation {
         PLUS("+") {
+            @Override
             int calculate(int operand1, int operand2) {
                 return operand1 + operand2;
             }
         },
 
         SUBTRACT("-") {
+            @Override
             int calculate(int operand1, int operand2) {
                 return operand1 - operand2;
             }
         },
 
         DIVIDE("/") {
+            @Override
             int calculate(int operand1, int operand2) {
                 return operand1 / operand2;
             }
         },
 
         MULTIPLY("*") {
+            @Override
             int calculate(int operand1, int operand2) {
                 return operand1 * operand2;
             }
